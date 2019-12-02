@@ -16,3 +16,4 @@
 - [Styles - Framework](steps/styles-framework.md)
 - [Fetch](steps/fetch.md)
 - [useEffect](steps/useEffect.md)
+- [Redux](steps/redux.md)
