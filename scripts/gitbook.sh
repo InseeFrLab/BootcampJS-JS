@@ -3,7 +3,6 @@
 set -e
 
 DOC_FOLDER="docs"
-STORYBOOK_FOLDER="built-storybook"
 SITE_FOLDER="website"
 
 MAIN_BRANCH="master"
