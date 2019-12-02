@@ -14,3 +14,4 @@
 - [React router dom](steps/react-router-dom.md)
 - [Styles - SCSS](steps/styles-scss.md)
 - [Styles - Framework](steps/styles-framework.md)
+- [Fetch](steps/fetch.md)

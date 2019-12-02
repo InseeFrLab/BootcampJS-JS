@@ -59,12 +59,12 @@ class Edition extends Component {
 			observation,
 			availableNumbers,
 		} = this.state;
-		const { title, history } = this.props;
+		const { title, history, callApi } = this.props;
 		return (
 			<>
 				{openModal && (
 					<Modal
-						onClick={() => history.push('/')}
+						onClick={() => callApi(this.state).then(() => history.push('/'))}
 						data={buildData(this.state)}
 					/>
 				)}
@@ -140,5 +140,6 @@ Edition.propTypes = {
 	title: PropTypes.string.isRequired,
 	data: PropTypes.shape({}).isRequired,
 	availableNumbers: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+	callApi: PropTypes.func.isRequired,
 	history: PropTypes.shape({ push: PropTypes.func.isRequired }).isRequired,
 };
