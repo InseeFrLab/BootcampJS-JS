@@ -46,5 +46,5 @@ Une surcouche, incluant `ESLint` et `Prettier` vous est proposée :
 ```bash
 git clone https://github.com/InseeFrLab/BootcampJS-JS.git
 cd BootcampJS-JS
-git checkout XXX
+git checkout 77dad7dcc1962a020d32c44e8e868b84b2e04ac4
 ```
