@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>useState · Bauhaus</title>
+        <title>React router dom · Bauhaus</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -61,10 +61,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="react-router-dom.html" />
     
-    
-    <link rel="prev" href="class-components.html" />
+    <link rel="prev" href="useState.html" />
     
 
     </head>
@@ -180,7 +178,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.5" data-path="useState.html">
+        <li class="chapter " data-level="2.5" data-path="useState.html">
             
                 <a href="useState.html">
             
@@ -193,7 +191,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.6" data-path="react-router-dom.html">
+        <li class="chapter active" data-level="2.6" data-path="react-router-dom.html">
             
                 <a href="react-router-dom.html">
             
@@ -236,7 +234,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >useState</a>
+        <a href=".." >React router dom</a>
     </h1>
 </div>
 
@@ -251,18 +249,19 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="usestate">useState</h1>
+                                <h1 id="react-router">React router</h1>
 <h2 id="but">But</h2>
-<p>Utiliser un premier <code>Hook</code> : useState</p>
+<p>Faire de votre SPA une application rout&#xE9;e.</p>
 <h2 id="enonc&#xE9;">Enonc&#xE9;</h2>
 <ul>
-<li>Ajouter le plugin ESLint d&#xE9;di&#xE9; aux Hooks (<code>eslint-plugin-react-hooks</code>) dans vos devDependencies</li>
-<li>Refactorer <code>root.js</code> pour qu&apos;il redevienne un functional component, &#xE0; l&apos;aide du Hook <code>useState</code></li>
+<li>ajouter <code>react-router-dom</code> &#xE0; votre projet</li>
+<li>modifier le composant de haut niveau <code>root.js</code> pour associer des composants &#xE0; des routes</li>
+<li>g&#xE9;rer les &#xE9;v&#xE9;nements (boutons et liens) avec les m&#xE9;thodes de l&apos;API de <code>react-router-dom</code></li>
 </ul>
 <h2 id="proposition-de-code">Proposition de code</h2>
 <pre class="language-"><code class="lang-bash"><span class="token function">git</span> clone https://github.com/InseeFrLab/BootcampJS-JS.git
 <span class="token builtin class-name">cd</span> BootcampJS-JS
-<span class="token function">git</span> checkout aa21fe77b6598f44fbdf9f9da7e050b715994eb8
+<span class="token function">git</span> checkout cb573a8fc30d11595cd09491b0d07d34292e5cd1
 </code></pre>
 
                                 
@@ -291,14 +290,10 @@
 
             
                 
-                <a href="class-components.html" class="navigation navigation-prev " aria-label="Previous page: Composants - Classes">
+                <a href="useState.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: useState">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="react-router-dom.html" class="navigation navigation-next " aria-label="Next page: React router dom">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -307,7 +302,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"useState","level":"2.5","depth":1,"next":{"title":"React router dom","level":"2.6","depth":1,"path":"steps/react-router-dom.md","ref":"steps/react-router-dom.md","articles":[]},"previous":{"title":"Composants - Classes","level":"2.4","depth":1,"path":"steps/class-components.md","ref":"steps/class-components.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","anchorjs","image-captions","include-codeblock"],"root":"./","styles":{"website":"gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"github":{"url":"https://github.com/InseeFr/Bauhaus/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/InseeFr/Bauhaus/tree/master/docs"},"theme-default":{"styles":{"website":"gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"spec.html#fig1.2.1","level":"1.2","list_caption":"Figure: accueil-liste","alt":"accueil-liste","nro":1,"url":"img/accueil-liste.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"accueil-liste","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"spec.html#fig1.2.2","level":"1.2","list_caption":"Figure: creation-nouvelle-ligne","alt":"creation-nouvelle-ligne","nro":2,"url":"img/creation-nouvelle-ligne.gif","index":2,"caption_template":"Figure: _CAPTION_","label":"creation-nouvelle-ligne","attributes":{},"skip":false,"key":"1.2.2"},{"backlink":"spec.html#fig1.2.3","level":"1.2","list_caption":"Figure: modification-ligne-existante","alt":"modification-ligne-existante","nro":3,"url":"img/modification-ligne-existante.gif","index":3,"caption_template":"Figure: _CAPTION_","label":"modification-ligne-existante","attributes":{},"skip":false,"key":"1.2.3"},{"backlink":"spec.html#fig1.2.4","level":"1.2","list_caption":"Figure: navigation","alt":"navigation","nro":4,"url":"img/navigation.png","index":4,"caption_template":"Figure: _CAPTION_","label":"navigation","attributes":{},"skip":false,"key":"1.2.4"},{"backlink":"steps/functional-components.html#fig2.3.1","level":"2.3","list_caption":"Figure: react-home-simple","alt":"react-home-simple","nro":5,"url":"../img/react-home-simple.png","index":1,"caption_template":"Figure: _CAPTION_","label":"react-home-simple","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"steps/class-components.html#fig2.4.1","level":"2.4","list_caption":"Figure: react-list","alt":"react-list","nro":6,"url":"../img/react-list.png","index":1,"caption_template":"Figure: _CAPTION_","label":"react-list","attributes":{},"skip":false,"key":"2.4.1"},{"backlink":"steps/class-components.html#fig2.4.2","level":"2.4","list_caption":"Figure: react-create","alt":"react-create","nro":7,"url":"../img/react-create.png","index":2,"caption_template":"Figure: _CAPTION_","label":"react-create","attributes":{},"skip":false,"key":"2.4.2"},{"backlink":"steps/class-components.html#fig2.4.3","level":"2.4","list_caption":"Figure: react-update","alt":"react-update","nro":8,"url":"../img/react-update.png","index":3,"caption_template":"Figure: _CAPTION_","label":"react-update","attributes":{},"skip":false,"key":"2.4.3"},{"backlink":"steps/class-components.html#fig2.4.4","level":"2.4","list_caption":"Figure: react-nav-home","alt":"react-nav-home","nro":9,"url":"../img/react-nav-home.png","index":4,"caption_template":"Figure: _CAPTION_","label":"react-nav-home","attributes":{},"skip":false,"key":"2.4.4"}]},"title":"Bauhaus","language":"fr","gitbook":"*"},"file":{"path":"steps/useState.md","mtime":"2019-12-02T12:41:20.929Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-12-02T12:43:16.783Z"},"basePath":"..","book":{"language":"fr"}});
+            gitbook.page.hasChanged({"page":{"title":"React router dom","level":"2.6","depth":1,"previous":{"title":"useState","level":"2.5","depth":1,"path":"steps/useState.md","ref":"steps/useState.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","anchorjs","image-captions","include-codeblock"],"root":"./","styles":{"website":"gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"github":{"url":"https://github.com/InseeFr/Bauhaus/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/InseeFr/Bauhaus/tree/master/docs"},"theme-default":{"styles":{"website":"gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"spec.html#fig1.2.1","level":"1.2","list_caption":"Figure: accueil-liste","alt":"accueil-liste","nro":1,"url":"img/accueil-liste.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"accueil-liste","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"spec.html#fig1.2.2","level":"1.2","list_caption":"Figure: creation-nouvelle-ligne","alt":"creation-nouvelle-ligne","nro":2,"url":"img/creation-nouvelle-ligne.gif","index":2,"caption_template":"Figure: _CAPTION_","label":"creation-nouvelle-ligne","attributes":{},"skip":false,"key":"1.2.2"},{"backlink":"spec.html#fig1.2.3","level":"1.2","list_caption":"Figure: modification-ligne-existante","alt":"modification-ligne-existante","nro":3,"url":"img/modification-ligne-existante.gif","index":3,"caption_template":"Figure: _CAPTION_","label":"modification-ligne-existante","attributes":{},"skip":false,"key":"1.2.3"},{"backlink":"spec.html#fig1.2.4","level":"1.2","list_caption":"Figure: navigation","alt":"navigation","nro":4,"url":"img/navigation.png","index":4,"caption_template":"Figure: _CAPTION_","label":"navigation","attributes":{},"skip":false,"key":"1.2.4"},{"backlink":"steps/functional-components.html#fig2.3.1","level":"2.3","list_caption":"Figure: react-home-simple","alt":"react-home-simple","nro":5,"url":"../img/react-home-simple.png","index":1,"caption_template":"Figure: _CAPTION_","label":"react-home-simple","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"steps/class-components.html#fig2.4.1","level":"2.4","list_caption":"Figure: react-list","alt":"react-list","nro":6,"url":"../img/react-list.png","index":1,"caption_template":"Figure: _CAPTION_","label":"react-list","attributes":{},"skip":false,"key":"2.4.1"},{"backlink":"steps/class-components.html#fig2.4.2","level":"2.4","list_caption":"Figure: react-create","alt":"react-create","nro":7,"url":"../img/react-create.png","index":2,"caption_template":"Figure: _CAPTION_","label":"react-create","attributes":{},"skip":false,"key":"2.4.2"},{"backlink":"steps/class-components.html#fig2.4.3","level":"2.4","list_caption":"Figure: react-update","alt":"react-update","nro":8,"url":"../img/react-update.png","index":3,"caption_template":"Figure: _CAPTION_","label":"react-update","attributes":{},"skip":false,"key":"2.4.3"},{"backlink":"steps/class-components.html#fig2.4.4","level":"2.4","list_caption":"Figure: react-nav-home","alt":"react-nav-home","nro":9,"url":"../img/react-nav-home.png","index":4,"caption_template":"Figure: _CAPTION_","label":"react-nav-home","attributes":{},"skip":false,"key":"2.4.4"}]},"title":"Bauhaus","language":"fr","gitbook":"*"},"file":{"path":"steps/react-router-dom.md","mtime":"2019-12-02T12:41:20.929Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-12-02T12:43:16.783Z"},"basePath":"..","book":{"language":"fr"}});
         });
     </script>
 </div>
