@@ -1,5 +1,22 @@
 language: node_js
 node_js:
   - 12.8.0
+services:
+  - docker
+script:
+  - yarn test
+  - yarn build
+deploy:
+  skip_cleanup: true
+  provider: script
+  script:
+    echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+    && docker push inseefrlab/bootcampjs-js
+  on:
+    branch: master
 after_script:
   - bash scripts/gitbook.sh
+env:
+  global:
+    - secure: MKwJwagsipLNDtVicyo1175LxT2Kflc1sS+OcU8jQh87+86T2UPMypOQY05IK2jDd8B/gSHAWsicMqjZ41ztU3Y/v8qDAuLNCt8Xz0Rv96S7T0Ut7dJeml56IQ4s/t6205hsdHYXEf40sRCpvotS111Vx0x7vaWaqlvK7bEPT2r9NbUtNB4MpVz07+UG7lEyvkdvPHpx39eDsBnmIl57YkD8/6t0HSWAGZ1lCGPhLICJsxT4uooXVBlDoIhG+yPIJ6Tw1OqV2EIB422b2lUSP4CSZgGM/QSsZKScl+IL1+qmvilsXjRJ/TxMAfg8a247G2G8uRCkoQMqce84PLwW8/FqnioAKXDPai0Y27rnxJ9baVv0W/wGL25/2VOOSf8HWZG2C0RDNh5PGzegR3EcSv2pJU1TGqxzR3vC0HSeRBXQNV2+nbxmHG9SbaCwoLpE6VmCRzCyS07+Kup7lN91d1+9IiUZ+T1Uenf+rD32NYSt0NlSVv5rMUMRTxNgS9KZpo0aepjTYDrjfVQ4y3McH4BkXxlx+WLQBdVjqaNEDXKWdOQiGXe+OMDX0rMcJURCKpITs8K7ZnvMshklKWFTfc/j0bKIN7Snu/yS9L5Gr66lP6vjtMJJPrHqyRLd6BIHx1J68QnDf8XOaTWcQkghFqDG7DoFLU0KSdjaWMThrQE=
+    - secure: Sj62ghVsuohqw8qgHat3ySTT5wwrJArxd3/AElGJbdkLIVMkjX7BSawvI3H8Dqo3GVNCM+HsPepAMd4w8gona67d4q25BtWaMGctqO5MVOwi7uFDo71GaMOtlXCHtuvzN37+jwIgLZMo1fUUYpx7JRkPps7UKo8xWZum/yCYqtfFDaUE0AGeb06QgRkfnx0wrIdGxVNTZxcTBYl7Z1USeTPET6OjM2HvHkBD6O4mZyoRIKh0MinvLK9RNBETJP9mwsclHrjV49Hplxx+6lEzOE4ic81Y5TepTFVHIO4AqsQRX6Zto/6hYx1sOrvWMynFsezTLp/Jf/jkZe39XUIqaMwLH9bVRm5J9N9hQHF2KrhY5XAbQgR+k6I5zXpgcQ1rs8yFQboZijyJrSjrkKw8FmqAQJDE3qytoSF8/qgzi876Z0CvN8zcNS5EGKf83yKpfTdTTFQ3bt3rYavHjikummXJey/Vr2rI8k4BW6bt0FY1TL4m5bM4VhfPBwZ96gaGVPDi8rJ/VduhoEl1g0/pLt+xLQ/25E443jETzj7N4oPjMY/to68oxNRjo298zA09w0zdeWjmy0HsjivHoReYdlk7XWFfaJZqKmmUBpp/746twvD77RQ4ITtWi/ntKwOEP9XQ6COEAu+pnj0WqNUtcMeLklCtzHTQpBJYqpGhhQI=
