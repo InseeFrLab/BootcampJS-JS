@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Create = ({ onReturn }) => (
+const Create = props => (
 	<>
 		<div>Page de création d‘une ligne téléphonique</div>
-		<button type="button" onClick={onReturn}>
+		<button type="button" onClick={() => props.history.push('/')}>
 			{'Retour'}
 		</button>
 	</>
@@ -13,5 +13,5 @@ const Create = ({ onReturn }) => (
 export default Create;
 
 Create.propTypes = {
-	onReturn: PropTypes.func.isRequired,
+	history: PropTypes.shape({ push: PropTypes.func.isRequired }).isRequired,
 };

@@ -1,21 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import fakeList from 'utils/fake-list';
 
-const LineList = ({ onUpdate }) => (
+const LineList = () => (
 	<ul>
 		{fakeList.map(({ id, label }) => (
 			<li key={id}>
-				<button type="button" onClick={() => onUpdate(id)}>
-					{label}
-				</button>
+				<Link to={`/update/${id}`}>{label}</Link>
 			</li>
 		))}
 	</ul>
 );
 
 export default LineList;
-
-LineList.propTypes = {
-	onUpdate: PropTypes.func.isRequired,
-};

@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
 
-const Menu = ({ onCreate }) => (
+const Menu = props => (
 	<>
-		<button type="button" onClick={onCreate}>
+		<button type="button" onClick={() => props.history.push('/create')}>
 			{'Nouvelle ligne'}
 		</button>
 		<button type="button" onClick={e => e.preventDefault}>
@@ -12,8 +13,8 @@ const Menu = ({ onCreate }) => (
 	</>
 );
 
-export default Menu;
+export default withRouter(Menu);
 
 Menu.propTypes = {
-	onCreate: PropTypes.func.isRequired,
+	history: PropTypes.shape({ push: PropTypes.func.isRequired }).isRequired,
 };
