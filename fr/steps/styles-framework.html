@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Composants - Classes · Bauhaus</title>
+        <title>Styles - Framework · Bauhaus</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -61,10 +61,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="useState.html" />
     
-    
-    <link rel="prev" href="functional-components.html" />
+    <link rel="prev" href="styles-scss.html" />
     
 
     </head>
@@ -167,7 +165,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.4" data-path="class-components.html">
+        <li class="chapter " data-level="2.4" data-path="class-components.html">
             
                 <a href="class-components.html">
             
@@ -219,7 +217,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.8" data-path="styles-framework.html">
+        <li class="chapter active" data-level="2.8" data-path="styles-framework.html">
             
                 <a href="styles-framework.html">
             
@@ -262,7 +260,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Composants - Classes</a>
+        <a href=".." >Styles - Framework</a>
     </h1>
 </div>
 
@@ -277,29 +275,23 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="class-components">Class components</h1>
+                                <h1 id="styles--ui-framework">Styles : UI framework</h1>
 <h2 id="but">But</h2>
-<p>Cr&#xE9;er des <strong>Class Component</strong>, avec state, props et prop-types.</p>
+<p>Utiliser des composants d&apos;un framework pour construire son interface.</p>
+<p>Pour ce bootcamp, nous avons choisi d&apos;utiliser <a href="https://react.semantic-ui.com/" target="_blank"><code>Semantic UI React</code></a></p>
 <h2 id="enonc&#xE9;">Enonc&#xE9;</h2>
-<p>L&apos;application contient une page de cr&#xE9;ation et une page de modification des lignes t&#xE9;l&#xE9;phoniques.</p>
-<p>Pour enrichir ainsi l&apos;application :</p>
 <ul>
-<li>modifier le composant d&apos;affichage de la liste des ligne t&#xE9;l&#xE9;phoniques (en cr&#xE9;ant le fichier <a href="https://github.com/InseeFrLab/BootcampJS-JS/tree/master/src/utils/fake-list.js" target="_blank"><code>fake-list.js</code></a> dans le dossier <code>utils</code>):</li>
+<li>ajouter la librairie et la feuille de style par d&#xE9;faut (via NPM)</li>
+<li>customiser le menu de la page principale</li>
+<li>faire du composant <code>Search</code> un champ input permettant de filtrer le tableau des lignes t&#xE9;l&#xE9;phoniques</li>
+<li>&#xE9;diter le tableau des lignes t&#xE9;l&#xE9;phoniques avec les <a href="https://github.com/InseeFrLab/BootcampJS-JS/blob/master/src/utils/fake-list.js" target="_blank">donn&#xE9;es fictives &#xE9;tendues</a> (copier et utiliser le composant contenu dans le dossier <a href="https://github.com/InseeFrLab/BootcampJS-JS/tree/master/src/components/shared/table" target="_blank"><code>components/shared/table</code></a>)</li>
+<li>mettre en place les formulaires de cr&#xE9;ation / modification</li>
 </ul>
-<figure id="fig2.4.1"><img src="../img/react-list.png" alt="react-list"><figcaption>Figure: react-list</figcaption></figure>
-<ul>
-<li><p>cr&#xE9;er 2 nouvelles pages minimalistes, par exemple :</p>
-<figure id="fig2.4.2"><img src="../img/react-create.png" alt="react-create"><figcaption>Figure: react-create</figcaption></figure>
-<figure id="fig2.4.3"><img src="../img/react-update.png" alt="react-update"><figcaption>Figure: react-update</figcaption></figure>
-</li>
-<li><p>permettre la navigation entre les 3 pages de l&apos;application (avec de simples <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token punctuation">/&gt;</span></span></code> html ou presque)</p>
-</li>
-</ul>
-<figure id="fig2.4.4"><img src="../img/react-nav-home.png" alt="react-nav-home"><figcaption>Figure: react-nav-home</figcaption></figure>
+<p><em>Utiliser un framework de style ne vous emp&#xEA;che pas de surcharger les &#xE9;l&#xE9;ments CSS de votre choix !</em></p>
 <h2 id="proposition-de-code">Proposition de code</h2>
 <pre class="language-"><code class="lang-bash"><span class="token function">git</span> clone https://github.com/InseeFrLab/BootcampJS-JS.git
 <span class="token builtin class-name">cd</span> BootcampJS-JS
-<span class="token function">git</span> checkout 4193a3ebda4b16a56e5e8bd8ae08dadc9696e072
+<span class="token function">git</span> checkout 80a6d7f8100486a3abb45e7857a1a3e9023df428
 </code></pre>
 
                                 
@@ -328,14 +320,10 @@
 
             
                 
-                <a href="functional-components.html" class="navigation navigation-prev " aria-label="Previous page: Composants fonctionnels">
+                <a href="styles-scss.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Styles - SCSS">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="useState.html" class="navigation navigation-next " aria-label="Next page: useState">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -344,7 +332,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Composants - Classes","level":"2.4","depth":1,"next":{"title":"useState","level":"2.5","depth":1,"path":"steps/useState.md","ref":"steps/useState.md","articles":[]},"previous":{"title":"Composants fonctionnels","level":"2.3","depth":1,"path":"steps/functional-components.md","ref":"steps/functional-components.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","anchorjs","image-captions","include-codeblock"],"root":"./","styles":{"website":"gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"github":{"url":"https://github.com/InseeFr/Bauhaus/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/InseeFr/Bauhaus/tree/master/docs"},"theme-default":{"styles":{"website":"gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"spec.html#fig1.2.1","level":"1.2","list_caption":"Figure: accueil-liste","alt":"accueil-liste","nro":1,"url":"img/accueil-liste.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"accueil-liste","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"spec.html#fig1.2.2","level":"1.2","list_caption":"Figure: creation-nouvelle-ligne","alt":"creation-nouvelle-ligne","nro":2,"url":"img/creation-nouvelle-ligne.gif","index":2,"caption_template":"Figure: _CAPTION_","label":"creation-nouvelle-ligne","attributes":{},"skip":false,"key":"1.2.2"},{"backlink":"spec.html#fig1.2.3","level":"1.2","list_caption":"Figure: modification-ligne-existante","alt":"modification-ligne-existante","nro":3,"url":"img/modification-ligne-existante.gif","index":3,"caption_template":"Figure: _CAPTION_","label":"modification-ligne-existante","attributes":{},"skip":false,"key":"1.2.3"},{"backlink":"spec.html#fig1.2.4","level":"1.2","list_caption":"Figure: navigation","alt":"navigation","nro":4,"url":"img/navigation.png","index":4,"caption_template":"Figure: _CAPTION_","label":"navigation","attributes":{},"skip":false,"key":"1.2.4"},{"backlink":"steps/functional-components.html#fig2.3.1","level":"2.3","list_caption":"Figure: react-home-simple","alt":"react-home-simple","nro":5,"url":"../img/react-home-simple.png","index":1,"caption_template":"Figure: _CAPTION_","label":"react-home-simple","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"steps/class-components.html#fig2.4.1","level":"2.4","list_caption":"Figure: react-list","alt":"react-list","nro":6,"url":"../img/react-list.png","index":1,"caption_template":"Figure: _CAPTION_","label":"react-list","attributes":{},"skip":false,"key":"2.4.1"},{"backlink":"steps/class-components.html#fig2.4.2","level":"2.4","list_caption":"Figure: react-create","alt":"react-create","nro":7,"url":"../img/react-create.png","index":2,"caption_template":"Figure: _CAPTION_","label":"react-create","attributes":{},"skip":false,"key":"2.4.2"},{"backlink":"steps/class-components.html#fig2.4.3","level":"2.4","list_caption":"Figure: react-update","alt":"react-update","nro":8,"url":"../img/react-update.png","index":3,"caption_template":"Figure: _CAPTION_","label":"react-update","attributes":{},"skip":false,"key":"2.4.3"},{"backlink":"steps/class-components.html#fig2.4.4","level":"2.4","list_caption":"Figure: react-nav-home","alt":"react-nav-home","nro":9,"url":"../img/react-nav-home.png","index":4,"caption_template":"Figure: _CAPTION_","label":"react-nav-home","attributes":{},"skip":false,"key":"2.4.4"}]},"title":"Bauhaus","language":"fr","gitbook":"*"},"file":{"path":"steps/class-components.md","mtime":"2019-12-02T12:47:45.361Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-12-02T12:49:03.329Z"},"basePath":"..","book":{"language":"fr"}});
+            gitbook.page.hasChanged({"page":{"title":"Styles - Framework","level":"2.8","depth":1,"previous":{"title":"Styles - SCSS","level":"2.7","depth":1,"path":"steps/styles-scss.md","ref":"steps/styles-scss.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","anchorjs","image-captions","include-codeblock"],"root":"./","styles":{"website":"gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"github":{"url":"https://github.com/InseeFr/Bauhaus/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/InseeFr/Bauhaus/tree/master/docs"},"theme-default":{"styles":{"website":"gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"spec.html#fig1.2.1","level":"1.2","list_caption":"Figure: accueil-liste","alt":"accueil-liste","nro":1,"url":"img/accueil-liste.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"accueil-liste","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"spec.html#fig1.2.2","level":"1.2","list_caption":"Figure: creation-nouvelle-ligne","alt":"creation-nouvelle-ligne","nro":2,"url":"img/creation-nouvelle-ligne.gif","index":2,"caption_template":"Figure: _CAPTION_","label":"creation-nouvelle-ligne","attributes":{},"skip":false,"key":"1.2.2"},{"backlink":"spec.html#fig1.2.3","level":"1.2","list_caption":"Figure: modification-ligne-existante","alt":"modification-ligne-existante","nro":3,"url":"img/modification-ligne-existante.gif","index":3,"caption_template":"Figure: _CAPTION_","label":"modification-ligne-existante","attributes":{},"skip":false,"key":"1.2.3"},{"backlink":"spec.html#fig1.2.4","level":"1.2","list_caption":"Figure: navigation","alt":"navigation","nro":4,"url":"img/navigation.png","index":4,"caption_template":"Figure: _CAPTION_","label":"navigation","attributes":{},"skip":false,"key":"1.2.4"},{"backlink":"steps/functional-components.html#fig2.3.1","level":"2.3","list_caption":"Figure: react-home-simple","alt":"react-home-simple","nro":5,"url":"../img/react-home-simple.png","index":1,"caption_template":"Figure: _CAPTION_","label":"react-home-simple","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"steps/class-components.html#fig2.4.1","level":"2.4","list_caption":"Figure: react-list","alt":"react-list","nro":6,"url":"../img/react-list.png","index":1,"caption_template":"Figure: _CAPTION_","label":"react-list","attributes":{},"skip":false,"key":"2.4.1"},{"backlink":"steps/class-components.html#fig2.4.2","level":"2.4","list_caption":"Figure: react-create","alt":"react-create","nro":7,"url":"../img/react-create.png","index":2,"caption_template":"Figure: _CAPTION_","label":"react-create","attributes":{},"skip":false,"key":"2.4.2"},{"backlink":"steps/class-components.html#fig2.4.3","level":"2.4","list_caption":"Figure: react-update","alt":"react-update","nro":8,"url":"../img/react-update.png","index":3,"caption_template":"Figure: _CAPTION_","label":"react-update","attributes":{},"skip":false,"key":"2.4.3"},{"backlink":"steps/class-components.html#fig2.4.4","level":"2.4","list_caption":"Figure: react-nav-home","alt":"react-nav-home","nro":9,"url":"../img/react-nav-home.png","index":4,"caption_template":"Figure: _CAPTION_","label":"react-nav-home","attributes":{},"skip":false,"key":"2.4.4"}]},"title":"Bauhaus","language":"fr","gitbook":"*"},"file":{"path":"steps/styles-framework.md","mtime":"2019-12-02T12:47:45.365Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-12-02T12:49:03.329Z"},"basePath":"..","book":{"language":"fr"}});
         });
     </script>
 </div>
