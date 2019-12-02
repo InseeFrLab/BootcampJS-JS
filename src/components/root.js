@@ -1,46 +1,41 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import fakeList from 'utils/fake-list';
 import Home from './home';
 import { Create, Update } from './edition';
 
-class Root extends Component {
-	constructor() {
-		super();
-		this.state = { page: 'home', id: '' };
-		this.handleCreate = this.handleCreate.bind(this);
-		this.handleUpdate = this.handleUpdate.bind(this);
-		this.handleReturn = this.handleReturn.bind(this);
-	}
+const Root = () => {
+	const [page, setPage] = useState('home');
+	const [id, setId] = useState('');
 
-	handleCreate() {
-		this.setState({ page: 'create', id: '' });
-	}
+	const handleCreate = () => {
+		setPage('create');
+		setId('');
+	};
 
-	handleUpdate(id) {
-		this.setState({ page: 'update', id });
-	}
+	const handleUpdate = newId => {
+		setPage('update');
+		setId(newId);
+	};
 
-	handleReturn() {
-		this.setState({ page: 'home', id: '' });
-	}
+	const handleReturn = () => {
+		setPage('home');
+		setId('');
+	};
 
-	render() {
-		const { page, id } = this.state;
-		return (
-			<>
-				{page === 'home' && (
-					<Home onCreate={this.handleCreate} onUpdate={this.handleUpdate} />
-				)}
-				{page === 'create' && <Create onReturn={this.handleReturn} />}
-				{page === 'update' && (
-					<Update
-						onReturn={this.handleReturn}
-						label={fakeList.find(l => l.id === id).label}
-					/>
-				)}
-			</>
-		);
-	}
-}
+	return (
+		<>
+			{page === 'home' && (
+				<Home onCreate={handleCreate} onUpdate={handleUpdate} />
+			)}
+			{page === 'create' && <Create onReturn={handleReturn} />}
+			{page === 'update' && (
+				<Update
+					onReturn={handleReturn}
+					label={fakeList.find(l => l.id === id).label}
+				/>
+			)}
+		</>
+	);
+};
 
 export default Root;
