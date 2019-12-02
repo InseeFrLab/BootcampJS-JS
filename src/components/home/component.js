@@ -1,29 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Title from 'components/shared/title';
-import Search from './search';
-import LineList from './line-list';
+import SearchContainer from './search';
+import LineListContainer from './line-list';
 
-class Home extends Component {
-	constructor() {
-		super();
-		this.state = { search: '' };
-		this.handleChangeSearch = this.handleChangeSearch.bind(this);
-	}
-
-	handleChangeSearch(event) {
-		this.setState({ search: event.target.value });
-	}
-
-	render() {
-		const { search } = this.state;
-		return (
-			<div className="container">
-				<Title label="Liste des lignes téléphoniques" />
-				<Search search={search} onChange={this.handleChangeSearch} />
-				<LineList search={search} />
-			</div>
-		);
-	}
-}
+const Home = () => (
+	<div className="container">
+		<Title label="Liste des lignes téléphoniques" />
+		<SearchContainer />
+		<LineListContainer />
+	</div>
+);
 
 export default Home;

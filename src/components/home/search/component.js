@@ -9,7 +9,7 @@ const Search = ({ search, onChange }) => (
 			icon="search"
 			value={search}
 			placeholder="Rechercher ..."
-			onChange={onChange}
+			onChange={e => onChange(e.target.value)}
 			id="search-input"
 		/>
 	</div>

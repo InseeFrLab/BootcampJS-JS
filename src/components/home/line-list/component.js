@@ -5,7 +5,7 @@ import { filterArray, sortArrayByKey } from 'utils/array-utils';
 import { getDesignations } from 'utils/call-api';
 import { Loader, Message } from 'semantic-ui-react';
 
-const List = ({ search }) => {
+const List = ({ search = '' }) => {
 	const [list, setList] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(undefined);
