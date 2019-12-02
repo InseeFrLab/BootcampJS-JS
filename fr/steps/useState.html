@@ -1,0 +1,401 @@
+
+<!DOCTYPE HTML>
+<html lang="fr" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>useState · Bauhaus</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="react-router-dom.html" />
+    
+    
+    <link rel="prev" href="class-components.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Tapez pour rechercher" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Application</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../spec.html">
+            
+                <a href="../spec.html">
+            
+                    
+                    Spécification
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Guide du développeur</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../getting-started.html">
+            
+                <a href="../getting-started.html">
+            
+                    
+                    Démarrage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="ECMAScript.html">
+            
+                <a href="ECMAScript.html">
+            
+                    
+                    ECMAScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="functional-components.html">
+            
+                <a href="functional-components.html">
+            
+                    
+                    Composants fonctionnels
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="class-components.html">
+            
+                <a href="class-components.html">
+            
+                    
+                    Composants - Classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5" data-path="useState.html">
+            
+                <a href="useState.html">
+            
+                    
+                    useState
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="react-router-dom.html">
+            
+                <a href="react-router-dom.html">
+            
+                    
+                    React router dom
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="styles-scss.html">
+            
+                <a href="styles-scss.html">
+            
+                    
+                    Styles - SCSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="styles-framework.html">
+            
+                <a href="styles-framework.html">
+            
+                    
+                    Styles - Framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="fetch.html">
+            
+                <a href="fetch.html">
+            
+                    
+                    Fetch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publié avec GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >useState</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="usestate">useState</h1>
+<h2 id="but">But</h2>
+<p>Utiliser un premier <code>Hook</code> : useState</p>
+<h2 id="enonc&#xE9;">Enonc&#xE9;</h2>
+<ul>
+<li>Ajouter le plugin ESLint d&#xE9;di&#xE9; aux Hooks (<code>eslint-plugin-react-hooks</code>) dans vos devDependencies</li>
+<li>Refactorer <code>root.js</code> pour qu&apos;il redevienne un functional component, &#xE0; l&apos;aide du Hook <code>useState</code></li>
+</ul>
+<h2 id="proposition-de-code">Proposition de code</h2>
+<pre class="language-"><code class="lang-bash"><span class="token function">git</span> clone https://github.com/InseeFrLab/BootcampJS-JS.git
+<span class="token builtin class-name">cd</span> BootcampJS-JS
+<span class="token function">git</span> checkout aa21fe77b6598f44fbdf9f9da7e050b715994eb8
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="class-components.html" class="navigation navigation-prev " aria-label="Previous page: Composants - Classes">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="react-router-dom.html" class="navigation navigation-next " aria-label="Next page: React router dom">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"useState","level":"2.5","depth":1,"next":{"title":"React router dom","level":"2.6","depth":1,"path":"steps/react-router-dom.md","ref":"steps/react-router-dom.md","articles":[]},"previous":{"title":"Composants - Classes","level":"2.4","depth":1,"path":"steps/class-components.md","ref":"steps/class-components.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","anchorjs","image-captions","include-codeblock"],"root":"./","styles":{"website":"gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"github":{"url":"https://github.com/InseeFr/Bauhaus/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/InseeFr/Bauhaus/tree/master/docs"},"theme-default":{"styles":{"website":"gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"spec.html#fig1.2.1","level":"1.2","list_caption":"Figure: accueil-liste","alt":"accueil-liste","nro":1,"url":"img/accueil-liste.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"accueil-liste","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"spec.html#fig1.2.2","level":"1.2","list_caption":"Figure: creation-nouvelle-ligne","alt":"creation-nouvelle-ligne","nro":2,"url":"img/creation-nouvelle-ligne.gif","index":2,"caption_template":"Figure: _CAPTION_","label":"creation-nouvelle-ligne","attributes":{},"skip":false,"key":"1.2.2"},{"backlink":"spec.html#fig1.2.3","level":"1.2","list_caption":"Figure: modification-ligne-existante","alt":"modification-ligne-existante","nro":3,"url":"img/modification-ligne-existante.gif","index":3,"caption_template":"Figure: _CAPTION_","label":"modification-ligne-existante","attributes":{},"skip":false,"key":"1.2.3"},{"backlink":"spec.html#fig1.2.4","level":"1.2","list_caption":"Figure: navigation","alt":"navigation","nro":4,"url":"img/navigation.png","index":4,"caption_template":"Figure: _CAPTION_","label":"navigation","attributes":{},"skip":false,"key":"1.2.4"},{"backlink":"steps/functional-components.html#fig2.3.1","level":"2.3","list_caption":"Figure: react-home-simple","alt":"react-home-simple","nro":5,"url":"../img/react-home-simple.png","index":1,"caption_template":"Figure: _CAPTION_","label":"react-home-simple","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"steps/class-components.html#fig2.4.1","level":"2.4","list_caption":"Figure: react-list","alt":"react-list","nro":6,"url":"../img/react-list.png","index":1,"caption_template":"Figure: _CAPTION_","label":"react-list","attributes":{},"skip":false,"key":"2.4.1"},{"backlink":"steps/class-components.html#fig2.4.2","level":"2.4","list_caption":"Figure: react-create","alt":"react-create","nro":7,"url":"../img/react-create.png","index":2,"caption_template":"Figure: _CAPTION_","label":"react-create","attributes":{},"skip":false,"key":"2.4.2"},{"backlink":"steps/class-components.html#fig2.4.3","level":"2.4","list_caption":"Figure: react-update","alt":"react-update","nro":8,"url":"../img/react-update.png","index":3,"caption_template":"Figure: _CAPTION_","label":"react-update","attributes":{},"skip":false,"key":"2.4.3"},{"backlink":"steps/class-components.html#fig2.4.4","level":"2.4","list_caption":"Figure: react-nav-home","alt":"react-nav-home","nro":9,"url":"../img/react-nav-home.png","index":4,"caption_template":"Figure: _CAPTION_","label":"react-nav-home","attributes":{},"skip":false,"key":"2.4.4"}]},"title":"Bauhaus","language":"fr","gitbook":"*"},"file":{"path":"steps/useState.md","mtime":"2019-12-02T12:52:28.904Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-12-02T12:53:49.881Z"},"basePath":"..","book":{"language":"fr"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
