@@ -1,0 +1,17 @@
+@import 'index.scss';
+
+.form-edition {
+  padding: 1em;
+  border: 1px solid $main_color;
+  .ui.button {
+    width: 15%;
+  }
+}
+
+.main-button.ui.button {
+  color: white;
+  background: $main_color;
+  &:hover {
+    background: $second_color;
+  }
+}

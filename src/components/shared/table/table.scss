@@ -1,0 +1,21 @@
+@import 'index.scss';
+
+#list-table {
+  border-color: $main_color;
+  #list-table-header {
+    color: $main_color;
+  }
+  td a {
+    color: $main_color;
+    &:hover {
+      color: $second_color;
+    }
+  }
+}
+
+#table-pagination {
+  border-color: $main_color;
+  .active.item {
+    background: $main_color;
+  }
+}

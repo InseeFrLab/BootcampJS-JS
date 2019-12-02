@@ -1,0 +1,12 @@
+@import 'index.scss';
+
+.app-title {
+  display: inline-flex;
+  font-size: 2em;
+  color: white;
+  border-radius: 0.8em;
+  padding: 0.8em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: radial-gradient($second_color, $main_color);
+}
