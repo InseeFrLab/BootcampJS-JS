@@ -2,4 +2,5 @@
 
 ## Guide du développeur
 
-* [Démarrage](getting-started.md)
+- [Démarrage](getting-started.md)
+- [ECMAScript](steps/ECMAScript.md)
