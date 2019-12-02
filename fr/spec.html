@@ -1,0 +1,372 @@
+
+<!DOCTYPE HTML>
+<html lang="fr" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Spécification · Bauhaus</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="getting-started.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Tapez pour rechercher" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Application</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="spec.html">
+            
+                <a href="spec.html">
+            
+                    
+                    Spécification
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Guide du développeur</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    Démarrage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="steps/ECMAScript.html">
+            
+                <a href="steps/ECMAScript.html">
+            
+                    
+                    ECMAScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="steps/functional-components.html">
+            
+                <a href="steps/functional-components.html">
+            
+                    
+                    Composants fonctionnels
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publié avec GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Spécification</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="sp&#xE9;cifications">Sp&#xE9;cifications</h1>
+<h2 id="description-synth&#xE9;tique-du-besoin">Description synth&#xE9;tique du besoin</h2>
+<p>Monsieur R. doit g&#xE9;rer l&apos;ensemble des lignes t&#xE9;l&#xE9;phoniques d&apos;un des &#xE9;tablissements d&apos;une administration.</p>
+<p>Les lignes t&#xE9;l&#xE9;phoniques de l&apos;&#xE9;tablissement peuvent &#xEA;tre mises &#xE0; disposition :</p>
+<ul>
+<li>&#xE0; des agents dans leur bureau</li>
+<li>dans des salles de r&#xE9;union</li>
+<li>&#xE0; certains endroits de l&apos;&#xE9;tablissement (cantine, local technique, ...)</li>
+</ul>
+<p>Le &quot;comit&#xE9; de normalisation des noms d&apos;application &#xE0; consonance musicale&quot; s&apos;est r&#xE9;uni sur le sujet et il a &#xE9;t&#xE9; d&#xE9;cid&#xE9; d&apos;appeler cette application T&#xE9;l&#xE9;phone.</p>
+<p>L&apos;objectif de l&apos;application T&#xE9;l&#xE9;phone sera donc de permettre la gestion d&apos;une base de lignes t&#xE9;l&#xE9;phoniques.</p>
+<h2 id="cest-quoi-une-ligne-t&#xE9;l&#xE9;phonique-">C&apos;est quoi une ligne t&#xE9;l&#xE9;phonique ?</h2>
+<p>Une ligne t&#xE9;l&#xE9;phonique est caract&#xE9;ris&#xE9;e par les informations suivantes :</p>
+<ul>
+<li><p><strong>D&#xE9;signation</strong> : nom et pr&#xE9;nom de l&apos;agent, nom de la salle, ou &quot;En attente&quot; (Obligatoire)</p>
+<pre class="language-"><code>    Monsieur R. a l&apos;habitude de saisir les d&#xE9;signations de la mani&#xE8;re suivante :
+
+  [Nom Pr&#xE9;nom] pour les agents qui travaillent pour son administration (ex: Neymar Jean).
+  [- Nom de Salle] pour les salles  (ex : - Salle Binbin).
+  [* Nom Pr&#xE9;nom] pour certains agents qui travaillent dans le m&#xEA;me b&#xE2;timent mais dans une autre administration (ex : * Public Marius-Tr&#xE9;sor).
+  &quot;En attente&quot; lorsqu&apos;une ligne devient disponible suite par exemple au d&#xE9;part &#xE0; la retraite d&apos;un agent.
+</code></pre></li>
+<li><p><strong>Num&#xE9;ro</strong> : num&#xE9;ro court du poste abr&#xE9;g&#xE9; sur 4 chiffres (Obligatoire)</p>
+<pre class="language-"><code>   Un m&#xEA;me num&#xE9;ro ne pourra &#xEA;tre affect&#xE9; qu&apos;&#xE0; une seule d&#xE9;signation
+</code></pre></li>
+<li><p><strong>Liste rouge</strong> : une ligne sur liste rouge ne devra pas apparaitre dans le r&#xE9;sultat de la fonction d&apos;export</p>
+</li>
+<li><p><strong>Bureau</strong> : num&#xE9;ro du bureau ou de la salle o&#xF9; aboutit la ligne.</p>
+</li>
+<li><p><strong>Commentaire</strong> : commentaire libre sur 200 caract&#xE8;res</p>
+</li>
+</ul>
+<h2 id="fonctionnalit&#xE9;s-attendues">Fonctionnalit&#xE9;s attendues</h2>
+<p>Monsieur R. devra pouvoir :</p>
+<ul>
+<li><strong>Visualiser la liste de l&apos;ensemble des lignes</strong> de sa base avec la possibilit&#xE9; de filtrer sur certains crit&#xE8;res (D&#xE9;signation, Num&#xE9;ro)</li>
+<li><strong>Cr&#xE9;er une nouvelle ligne t&#xE9;l&#xE9;phonique</strong></li>
+<li><strong>Modifier une ligne t&#xE9;l&#xE9;phonique existante</strong></li>
+<li><strong>Exporter un sous ensemble de lignes</strong> sous la forme d&apos;une liste pour la mettre &#xE0; disposition des agents de l&#x2019;&#xE9;tablissement.</li>
+</ul>
+<h3 id="lister-les-lignes-t&#xE9;l&#xE9;phoniques">Lister les lignes t&#xE9;l&#xE9;phoniques</h3>
+<p>L&apos;application devra &#xEA;tre en mesure de pr&#xE9;senter l&apos;ensemble des lignes de la base sous la forme d&apos;un tableau.</p>
+<p>Dans ce tableau figureront l&apos;ensemble des informations de chacune des lignes de la base.</p>
+<p>Les lignes de ce tableau seront tri&#xE9;es par d&#xE9;faut sur la premi&#xE8;re colonne qui d&#xE9;signera le &quot;propri&#xE9;taire&quot; de la ligne.</p>
+<p>Une fonction de recherche permettra &#xE0; Monsieur R. de filtrer les lignes de la base sur son contenu (D&#xE9;signation, Num&#xE9;ro).</p>
+<h3 id="cr&#xE9;er-une-nouvelle-ligne">Cr&#xE9;er une nouvelle ligne</h3>
+<p>L&apos;&#xE9;cran de cr&#xE9;ation d&apos;une nouvelle ligne devra permettre de saisir l&apos;ensemble des informations relatives &#xE0; la ligne t&#xE9;l&#xE9;phonique, &#xE0; savoir sa d&#xE9;signation (obligatoire), son num&#xE9;ro (obligatoire), s&apos;il doit figurer sur liste rouge, le num&#xE9;ro de bureau associ&#xE9; et un commentaire libre.</p>
+<p>L&apos;enregistrement de la nouvelle ligne dans la base devra &#xEA;tre signifi&#xE9; &#xE0; l&apos;utilisateur par un message de confirmation (ou pop up).</p>
+<h3 id="modification-dune-ligne-existante">Modification d&apos;une ligne existante</h3>
+<p>L&apos;acc&#xE8;s &#xE0; l&apos;&#xE9;cran de modification d&apos;une ligne existante se fera en cliquant sur l&#x2019;ic&#xF4;ne modifier (ou un texte &#xE9;quivalent) pr&#xE9;sent&#xE9; &#xE0; c&#xF4;t&#xE9; des informations de la ligne dans le tableau listant les lignes.</p>
+<h3 id="export-dune-liste-de-ligne">Export d&apos;une liste de ligne</h3>
+<p>La fonctionnalit&#xE9; d&apos;export devra permettre de r&#xE9;cup&#xE9;rer l&apos;ensemble des lignes t&#xE9;l&#xE9;phonique <em>qui ne sont pas</em> sur liste rouge en ne gardant uniquement que les couples Designation - Num&#xE9;ro.
+Dans cet export, les lignes devront &#xEA;tre ordonn&#xE9;es par D&#xE9;signation.</p>
+<h2 id="maquettes">Maquettes</h2>
+<h3 id="page-daccueil">Page d&apos;accueil</h3>
+<figure id="fig1.2.1"><img src="img/accueil-liste.gif" alt="accueil-liste"><figcaption>Figure: accueil-liste</figcaption></figure>
+<h3 id="&#xE9;cran-de-cr&#xE9;ation-dune-ligne-t&#xE9;l&#xE9;phonique">&#xC9;cran de cr&#xE9;ation d&apos;une ligne t&#xE9;l&#xE9;phonique</h3>
+<figure id="fig1.2.2"><img src="img/creation-nouvelle-ligne.gif" alt="creation-nouvelle-ligne"><figcaption>Figure: creation-nouvelle-ligne</figcaption></figure>
+<h3 id="&#xE9;cran-de-modification-dune-ligne-t&#xE9;l&#xE9;phonique">&#xC9;cran de modification d&apos;une ligne t&#xE9;l&#xE9;phonique</h3>
+<figure id="fig1.2.3"><img src="img/modification-ligne-existante.gif" alt="modification-ligne-existante"><figcaption>Figure: modification-ligne-existante</figcaption></figure>
+<h2 id="navigation">Navigation</h2>
+<figure id="fig1.2.4"><img src="img/navigation.png" alt="navigation"><figcaption>Figure: navigation</figcaption></figure>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="getting-started.html" class="navigation navigation-next " aria-label="Next page: Démarrage">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Spécification","level":"1.2","depth":1,"next":{"title":"Démarrage","level":"2.1","depth":1,"path":"getting-started.md","ref":"getting-started.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","anchorjs","image-captions","include-codeblock"],"root":"./","styles":{"website":"gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"github":{"url":"https://github.com/InseeFr/Bauhaus/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"default","theme":"chrome","unindent":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/InseeFr/Bauhaus/tree/master/docs"},"theme-default":{"styles":{"website":"gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"spec.html#fig1.2.1","level":"1.2","list_caption":"Figure: accueil-liste","alt":"accueil-liste","nro":1,"url":"img/accueil-liste.gif","index":1,"caption_template":"Figure: _CAPTION_","label":"accueil-liste","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"spec.html#fig1.2.2","level":"1.2","list_caption":"Figure: creation-nouvelle-ligne","alt":"creation-nouvelle-ligne","nro":2,"url":"img/creation-nouvelle-ligne.gif","index":2,"caption_template":"Figure: _CAPTION_","label":"creation-nouvelle-ligne","attributes":{},"skip":false,"key":"1.2.2"},{"backlink":"spec.html#fig1.2.3","level":"1.2","list_caption":"Figure: modification-ligne-existante","alt":"modification-ligne-existante","nro":3,"url":"img/modification-ligne-existante.gif","index":3,"caption_template":"Figure: _CAPTION_","label":"modification-ligne-existante","attributes":{},"skip":false,"key":"1.2.3"},{"backlink":"spec.html#fig1.2.4","level":"1.2","list_caption":"Figure: navigation","alt":"navigation","nro":4,"url":"img/navigation.png","index":4,"caption_template":"Figure: _CAPTION_","label":"navigation","attributes":{},"skip":false,"key":"1.2.4"},{"backlink":"steps/functional-components.html#fig2.3.1","level":"2.3","list_caption":"Figure: react-home-simple","alt":"react-home-simple","nro":5,"url":"../img/react-home-simple.png","index":1,"caption_template":"Figure: _CAPTION_","label":"react-home-simple","attributes":{},"skip":false,"key":"2.3.1"}]},"title":"Bauhaus","language":"fr","gitbook":"*"},"file":{"path":"spec.md","mtime":"2019-12-02T12:15:18.891Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-12-02T12:16:40.466Z"},"basePath":".","book":{"language":"fr"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
