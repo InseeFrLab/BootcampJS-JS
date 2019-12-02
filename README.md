@@ -1,5 +1,7 @@
 # Bootcamp JS tunisien
 
+[![Build Status](https://travis-ci.org/InseeFrLab/BootcampJS-JS.svg?branch=master)](https://travis-ci.org/InseeFrLab/BootcampJS-JS)
+
 ## Documentation
 
 Une site documentaire est disponible [en ligne](TODO)
