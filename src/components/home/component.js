@@ -7,9 +7,11 @@ import LineList from './line-list';
 const Home = () => (
 	<>
 		<Menu />
-		<Title />
-		<Search />
-		<LineList />
+		<div className="container">
+			<Title />
+			<Search />
+			<LineList />
+		</div>
 	</>
 );
 

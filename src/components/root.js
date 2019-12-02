@@ -7,9 +7,15 @@ const Root = () => (
 	<Router>
 		<Switch>
 			<Route exact path="/" component={Home} />
-			<Route exact path="/create" component={Create} />
-			<Route exact path="/update/:id" component={Update} />
-			<Route component={() => <div>Not found</div>} />
+			<>
+				<div className="container">
+					<Switch>
+						<Route exact path="/create" component={Create} />
+						<Route exact path="/update/:id" component={Update} />
+						<Route component={() => <div>Not found</div>} />
+					</Switch>
+				</div>
+			</>
 		</Switch>
 	</Router>
 );
