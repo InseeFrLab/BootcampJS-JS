@@ -1,6 +1,6 @@
 {
 	"gitbook": "3.2.2",
-	"title": "Bauhaus",
+	"title": "Bootcamp JS - Tunisie",
 	"plugins": [
 		"edit-link",
 		"prism",
@@ -13,11 +13,11 @@
 	"root": "./",
 	"pluginsConfig": {
 		"edit-link": {
-			"base": "https://github.com/InseeFr/Bauhaus/tree/master/docs",
+			"base": "https://github.com/InseeFrLab/BootcampJS-JS/tree/master/docs",
 			"label": "Edit This Page"
 		},
 		"github": {
-			"url": "https://github.com/InseeFr/Bauhaus/"
+			"url": "https://github.com/InseeFrLab/BootcampJS-JS/"
 		},
 		"theme-default": {
 			"styles": {
