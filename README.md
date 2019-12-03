@@ -12,4 +12,4 @@ L'API dédiée à l'application est déployée [en ligne](https://demo.levitt.fr
 
 ## Application exemple
 
-Le code source JavaScript est compilé et déployé [ici](TODO)
+Le code source JavaScript est compilé et déployé [ici](https://app.levitt.fr/)
