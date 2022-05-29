@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
         - name: bootcampjs-js
-          image: inseefrlab/bootcampjs-js:0.1.1
+          image: inseefrlab/bootcampjs-js:0.1.2
           imagePullPolicy: IfNotPresent
           env:
             - name: BACKEND_PATH
-              value: 'https://bootcampjs-api.lab.sspcloud.fr/'
+              value: 'https://example-api.fr'

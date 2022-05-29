@@ -7,9 +7,9 @@ metadata:
 spec:
   tls:
     - hosts:
-        - bootcampjs.lab.sspcloud.fr
+        - example.fr
   rules:
-    - host: bootcampjs.lab.sspcloud.fr
+    - host: example.fr
       http:
         paths:
           - path: /
