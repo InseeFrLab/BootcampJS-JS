@@ -1,4 +1,6 @@
-const BASE_URL = process.env.REACT_APP_BACKEND_PATH;
+import { getEnv } from 'env';
+
+const BASE_URL = getEnv()['BACKEND_PATH'];
 
 const getData = url =>
 	fetch(url, {
