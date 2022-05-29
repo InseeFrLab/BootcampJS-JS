@@ -1,6 +1,7 @@
-# Bootcamp JS tunisien
+# Bootcamp JS
 
-[![Build Status](https://travis-ci.org/InseeFrLab/BootcampJS-JS.svg?branch=master)](https://travis-ci.org/InseeFrLab/BootcampJS-JS)
+[![Bootcamp JS CI](https://github.com/InseeFrLab/BootcampJS-JS/actions/workflows/ci.yml/badge.svg)](https://github.com/InseeFrLab/BootcampJS-JS/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Documentation
 
