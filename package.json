@@ -1,7 +1,7 @@
 {
 	"name": "bootcampjs-js",
-	"description": "BootcampJS tunisien 2019",
-	"version": "0.1.0",
+	"description": "BootcampJS",
+	"version": "0.1.1",
 	"license": "MIT",
 	"dependencies": {
 		"lodash.deburr": "^4.1.0",
