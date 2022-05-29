@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bootcampjs-js
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bootcampjs-js
+  template:
+    metadata:
+      labels:
+        app: bootcampjs-js
+    spec:
+      containers:
+        - name: bootcampjs-js
+          image: inseefrlab/bootcampjs-js:0.1.1
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: BACKEND_PATH
+              value: 'https://bootcampjs-api.lab.sspcloud.fr/'

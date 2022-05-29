@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: bootcampjs-js
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  tls:
+    - hosts:
+        - bootcampjs.lab.sspcloud.fr
+  rules:
+    - host: bootcampjs.lab.sspcloud.fr
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: bootcampjs-js
+                port:
+                  number: 80
